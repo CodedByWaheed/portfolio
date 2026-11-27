@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waheed Alborai — C# / .NET Backend Developer</title>
+<link rel="icon" type="image/png" href="assets/wolf2.png">
+<meta name="description" content="Portfolio of Waheed Alborai, a Junior Backend Developer specializing in C# and .NET.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<!-- NAVBAR -->
+<header class="nav" id="nav">
+  <a href="#home" class="nav__brand">WAHEED ALBORAI</a>
+  <nav class="nav__links" id="navLinks" aria-label="Main">
+    <a href="#home" class="is-active">HOME</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+  <span class="nav__status"><i></i>AVAILABLE FOR OPPORTUNITIES</span>
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home" data-section>
+  <div class="hero__bg" aria-hidden="true">ALBORAI</div>
+  <div class="hero__portrait" aria-label="Portrait placeholder">
+    <div class="portrait__ph"><span>PORTRAIT</span><small>Add assets/portrait.png</small></div>
+    <img src="assets/portrait.png" alt="Waheed Alborai" onload="this.parentElement.classList.add('has-img')" onerror="this.remove()">
+  </div>
+
+  <div class="hero__content">
+    <!-- <p class="hero__label hl">BACKEND DEVELOPER</p> -->
+    <p class="hero__hello hl">Hello, I'm</p>
+    <h1 class="hero__name"><span class="hl">WAHEED</span><span class="hl">ALBORAI</span></h1>
+    <p class="hero__title hl">C# / .NET BACKEND DEVELOPER</p>
+    <p class="hero__desc hl">Building reliable backend systems, scalable APIs, and database-driven applications with clean architecture and practical engineering principles.</p>
+    <div class="hero__cta hl">
+      <a href="#projects" class="btn btn--solid">VIEW PROJECTS</a>
+      <a href="#contact" class="btn btn--line">CONTACT ME</a>
+    </div>
+    <!-- <p class="hero__loc hl">BASED IN GAZA · AVAILABLE FOR REMOTE OPPORTUNITIES</p> -->
+  </div>
+
+  <aside class="hero__facts hl">
+    <p class="facts__intro">Turning Everyday Challenges into Digital Solutions.</p>
+    <ul>
+      <li><b>ASP.NET CORE</b><span>Primary platform</span> </li>
+      <li><b>SQL SERVER</b><span>Database </span></li>
+      <li><b>C# &amp; .NET</b><span>Programming Ecosystem</span></li>
+    </ul>
+  </aside>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects" data-section>
+  <div class="section__head reveal">
+    <h2>SELECTED PROJECTS</h2>
+    <span class="line"></span>
+  </div>
+ <div class="carousel-pagination"></div>
+
+  <div class="grid">
+
+    <article class="card reveal">
+      <div class="card__visual">
+        <img src="assets/LUKTAAPP.jpeg"alt="LUKTA - Smart app to manage your saved posts and messages "class="project-image"/> 
+      </div>
+    
+      <div class="card__body">
+        <span class="card__num">00</span>
+        <h3>LUKTA لقطة </h3>
+        <p class="card__cat">Smart app to manage your saved posts &amp; messages</p>
+        <p class="card__role">Team Lead &amp; Backend Developer</p>
+        <p class="card__desc">
+           Social media users frequently save posts, articles, and links they find valuable, only for them to get buried in overwhelming
+           bookmark collections. Over time, users forget why they saved certain items, making saved content difficult to revisit and 
+           often effectively lost.
+            <p class="card__desc"><strong>LUKTA</strong>transforms saved content into organized, actionable reminders. Users can share content with the app,
+              add a title and description, assign priorities and statuses, and schedule reminders.
+              All saved content is securely encrypted to protect user data.Helps users preserve the context behind saved content,
+              stay organized, and turn forgotten bookmarks into actionable items they can revisit and act on.
+            </p>
+           
+        </p>
+        <ul class="tags">
+          <li>ASP.NET Core Web API</li>
+          <li>.NET 8</li>
+          <li>SQL Server</li>
+          <li>Flutter</li>
+        </ul>
+        <ul class="feat">
+          <li>RESTful APIs</li>
+          <li>JWT Authentication</li>
+          <li>Role-Based Access Control</li>
+          <li>Transaction management</li>
+          <li>SQL Server stored procedures</li>
+          <li>Logging and auditing</li>
+          <li>ado.net</li>
+
+        </ul>
+        <div class="card__links">
+          <a href="https://play.google.com/store/apps/details?id=com.wolfbrain.lukta" target="_blank" rel="noopener">Google Play</a>
+          <!-- <a href="#contact" class="more">View details</a> -->
+        </div>
+      </div>
+    </article>
+
+    <article class="card reveal">
+
+      <div class="card__visual">
+        <img src="assets/khobzMockup.png"alt="KHOBZ - Smart Bread Distribution App"class="project-image"/>
+      </div>
+    
+      <div class="card__body">
+        <span class="card__num">01</span>
+        <h3>KHOBZ خبز </h3>
+        <p class="card__cat">Smart Bread Distribution &amp; Reservation System</p>
+        <p class="card__role">Team Lead &amp; Backend Developer</p>
+        <p class="card__desc">A digital platform designed to address the challenges of traditional bread distribution,
+            where manual reservations and unorganized distribution processes can lead to inefficiencies, limited transparency,
+            and difficulties tracking transactions.
+            <p class="card__desc"><strong>KHOBZ</strong> provides a centralized system for managing daily bread reservations, distribution points, QR-based verification,
+             and transactions, streamlining the entire distribution workflow through a unified backend and mobile applications.
+            </p>  
+        </p>
+        <ul class="tags">
+          <li>ASP.NET Core Web API</li>
+          <li>.NET 8</li>
+          <li>SQL Server</li>
+          <li>Flutter</li>
+        </ul>
+        <ul class="feat">
+          <li>RESTful APIs</li>
+          <li>JWT Authentication</li>
+          <li>Role-Based Access Control</li>
+          <li>QR Code workflows</li>
+          <li>Transaction management</li>
+          <li>SQL Server stored procedures</li>
+          <li>Logging and auditing</li>
+          <li>ado.net</li>
+        </ul>
+        <div class="card__links">
+          <a href="https://github.com/CodedByWaheed/BreadAppSystem" target="_blank" rel="noopener">GitHub</a>
+          <!-- <a href="#contact" class="more">View details</a> -->
+        </div>
+      </div>
+    </article>
+
+    <article class="card reveal">
+
+      <div class="card__visual">
+        <img src="assets/PharmaDSystem.png"alt="PharmaD -  Pharmacy Management System Focused on simplifying workflows"class="project-image"/> 
+      </div>
+
+      <div class="card__body">
+        <span class="card__num">02</span>
+        <h3>PHARMACY MANAGEMENT SYSTEM</h3>
+        <p class="card__cat">Desktop Business Application</p>
+        <p class="card__role">Solo Developer</p>
+        <p class="card__desc">Designed and developed a user-friendly Pharmacy Management System to
+           address real-world usability challenges faced by pharmacy professionals when working with complex, 
+           shortcut-heavy software. 
+           <p class="card__desc"> Focused on simplifying workflows and making everyday operations intuitive
+           for non-technical users.
+          </p>
+        </p>
+        <ul class="tags">
+          <li>C#</li>
+          <li>.NET FRAMEWORK</li>
+          <li>SQL Server</li>
+          <li>3-Tier Architecture</li>
+        </ul>
+        <ul class="feat">
+          <li>winforms</li>
+          <li>events& delegation</li>
+          <li>Registries key</li>
+          <li>controls</li>
+          <li>Ado.net</li>
+          <li>Publisher–Subscriber Pattern</li>
+        </ul>
+        <div class="card__links">
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7460697100771602432/" target="_blank" rel="noopener">Demo Video</a>
+          <!-- <a href="#contact" class="more">View details</a></div> -->
+      </div>
+    </article>
+
+    <article class="card reveal">
+
+      <div class="card__visual">
+        <img src="assets/Windows Services.png"alt="Windows Services - Dark laptop with red maintenance accents."class="project-image"/> 
+      </div>      
+      <div class="card__body">
+        <span class="card__num">04</span>
+        <h3>WINDOWS SERVICES</h3>
+        <p class="card__cat">Automated Background Services</p>
+        <p class="card__desc">Background services designed to automate system operations, monitor files, and manage database backups.</p>
+        <ul class="feat">
+          <li>Automated Database Backup Service</li>
+          <li>File Monitoring Service</li>
+        </ul>
+        <ul class="tags">
+          <li>C#</li>
+          <li>.NET</li>
+          <li>Mic Services</li>
+        </ul>
+        <div class="card__links">
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7503458231999029248/" target="_blank" rel="noopener">Database Backup Service Demo</a>
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7503444667280240640/" target="_blank" rel="noopener">File Monitoring Service Demo</a>
+          <!-- <a href="#contact" class="more">View details</a> -->
+        </div>
+      </div>
+    </article>
+
+    <article class="card reveal">
+
+      <div class="card__visual">
+        <img src="assets/DVLD.png"alt="DVLD- Driving viechle license department system "class="project-image"/> 
+      </div>
+
+      <div class="card__body">
+        <span class="card__num">05</span>
+        <h3>Driving &amp; Vehicle License Department</h3>
+        <p class="card__cat">Desktop Business Application</p>
+        <p class="card__role">Solo Developer</p>
+        <p class="card__desc">A desktop application designed to address the challenges of managing driving license operations,
+           where manual processes and disconnected records can lead to inefficiencies, data inconsistencies,
+            and difficulties managing users, people, and license applications. 
+        </p>
+         <p class="card__desc"><strong>DVLD</strong> provides a centralized system for managing user accounts,
+           personal records, and local driving license applications, streamlining administrative workflows. 
+        </p>
+        
+        <ul class="tags">
+          <li>C#</li>
+          <li>.NET FRAMEWORK 4.8</li>
+          <li>SQL Server</li>
+          <li>Windows Forms</li>
+        </ul>
+        <ul class="feat">
+          <li>User Management</li>
+          <li>Person Management</li>
+          <li>Local Driving License Applications</li>
+          <li>controls</li>
+          <li>Ado.net</li>
+          <li>Publisher–Subscriber Pattern</li>
+        </ul>
+        <div class="card__links">
+          <a href="https://github.com/CodedByWaheed/DVLD_System" target="_blank" rel="noopener">GitHup</a>
+          <!-- <a href="#contact" class="more">View details</a></div> -->
+      </div>
+    </article>
+    
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about" data-section>
+  <div class="section__head reveal"><h2>ABOUT &amp; TECHNICAL SKILLS</h2><span class="line"></span></div>
+  <div class="about">
+    <p class="about__intro reveal">I am a Software Engineering helping individuals and businesses overcome challenges 
+      through practical software solutions. I focus on understanding business needs, identifying problems,
+       and transforming them into efficient, reliable, and scalable applications.<br>
+       With a strong interest in backend development, 
+       database design, and system architecture, I aim to build solutions that simplify workflows, 
+       improve productivity, and create real business value.
+       </p>
+    
+    <div class="skills reveal">
+      <div>
+        <h3>BACKEND DEVELOPMENT</h3>
+        <ul class="tags">
+          <li>C#</li>
+          <li>ASP.NET Core</li>
+          <li>REST APIs</li>
+          <li>Web APIs</li>
+          <li>html</li>
+          <li>css</li>
+        </ul>
+      </div>
+      <div>
+        <h3>DATABASES</h3>
+        <ul class="tags">
+          <li>SQL Server</li>
+          <li>T-SQL</li>
+          <li>ADO.NET</li>
+           <li>EFCore</li>
+          <li>Stored Procedures</li>
+          <li>Database Design</li>
+         
+        </ul>
+      </div>
+      <div>
+        <h3>ARCHITECTURE</h3>
+        <ul class="tags">
+          <li>3-Tier Architecture</li>
+          <li>Clean Architecture</li>
+          <li>SOLID Principles</li>
+          <li>OOP</li>
+        </ul>
+      </div>
+      <div>
+        <h3>SECURITY</h3>
+        <ul class="tags">
+          <li>JWT Authentication</li>
+          <li>RBAC</li>
+          <li>Refresh Tokens</li>
+          <li>Authorization Policies</li>
+        </ul>
+      </div>
+      <div>
+        <h3>TOOLS</h3>
+        <ul class="tags">
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Swagger / OpenAPI</li>
+        </ul>
+      </div>
+      <div>
+        <h3>SOFTSKILLS</h3>
+        <ul class="tags">
+          <li>Problem-Solving</li>
+          <li>Team Leadership</li>
+          <li>Agile Software Development</li>
+          <li>Scrum Methodology</li>
+          <li>Teamwork &amp; Collaboration</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section section--alt" id="process">
+  <div class="section__head reveal"><h2>HOW I BUILD</h2><span class="line"></span></div>
+  <ol class="timeline">
+    <li class="reveal"><span class="step__n">01</span><span class="step__dot">1</span><div><h3>ANALYZE</h3><p>Understanding business requirements, user needs, and system workflows.</p></div></li>
+    <li class="reveal"><span class="step__n">02</span><span class="step__dot">2</span><div><h3>ARCHITECT</h3><p>Designing database structures, application architecture, and API contracts.</p></div></li>
+    <li class="reveal"><span class="step__n">03</span><span class="step__dot">3</span><div><h3>DEVELOP</h3><p>Building backend services, APIs, and business logic.</p></div></li>
+    <li class="reveal"><span class="step__n">04</span><span class="step__dot">4</span><div><h3>INTEGRATE</h3><p>Connecting components and implementing authentication, data flow, and integrations.</p></div></li>
+    <li class="reveal"><span class="step__n">05</span><span class="step__dot">5</span><div><h3>TEST &amp; OPTIMIZE</h3><p>Testing functionality, improving reliability, handling errors, and optimizing performance.</p></div></li>
+  </ol>
+</section>
+
+<!-- QUOTE -->
+<section class="quote reveal">
+  <blockquote>Good software is not just about writing code. It's about solving real problems with reliable systems.</blockquote>
+  <p class="quote__sig">Waheed Alborai</p>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact" data-section>
+  <div class="contact__main reveal">
+    <h2>LET'S BUILD SOMETHING</h2>
+    <p>I'm open to opportunities, collaborations, and projects where I can build meaningful backend solutions and contribute to real-world products.</p>
+    <ul class="contact__list">
+      <li><span>Email</span><a href="mailto:waheedalborai@gmail.com">waheedalborai@gmail.com</a></li>
+      <li><span>LinkedIn</span><a href="https://linkedin.com/in/waheedalborai" target="_blank" rel="noopener">linkedin.com/in/waheedalborai</a></li>
+      <li><span>GitHub</span><a href="https://github.com/CodedByWaheed" target="_blank" rel="noopener">github.com/CodedByWaheed</a></li>
+      <li><span>WhatsApp</span><a href="https://wa.me/972567788546" target="_blank" rel="noopener">+972 56-778-8546</a></li>
+
+    </ul>
+    <div class="hero__cta">
+      <a href="mailto:waheedalborai@gmail.com" class="btn btn--solid">GET IN TOUCH</a>
+      <a href="https://github.com/CodedByWaheed" target="_blank" rel="noopener" class="btn btn--line">VIEW GITHUB</a>
+    </div>
+  </div>
+  <div class="contact__visual reveal" aria-hidden="true">
+    <div class="laptop">
+      <div class="laptop__screen">
+        <div class="dash">
+          <b>API STATUS</b>
+          <div class="bars">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <p>/api/auth · /api/reservations · /api/points</p>
+        </div>
+      </div>
+      <div class="laptop__base"></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> Waheed Alborai</span><span>C# / .NET Backend Developer · Gaza</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
